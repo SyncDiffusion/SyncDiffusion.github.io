@@ -94,6 +94,16 @@
                   <span>Code (Add)</span>
                   </a>
               </span>
+              <!-- Gallery Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Gallery</span>
+                  </a>
+              </span>
             </div>
           </div>
         </div>
@@ -127,50 +137,68 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <h2 class="title is-3">Generated Panoramas</h2>
-  <div class="container">
-    <img src="./static/images/newyork_ours_01.png" alt="New York (Ours)" style="max-width:100%;">
-    <h2 class="subtitle has-text-centered">
-      "Skyline of New York City"
-    </h2>
-    <img src="./static/images/concert_ours_01.png" alt="Concert (Ours)" style="max-width:100%;">
-    <h2 class="subtitle has-text-centered">
-      "A photo of a rock concert"
-    </h2>
-    <img src="./static/images/anime_ours_01.png" alt="Anime (Ours)" style="max-width:100%;">
-    <h2 class="subtitle has-text-centered">
-      "Natural landscape in anime style illustration"
-    </h2>
-    <h2 class="subtitle has-text-centered">
-      <span class="dnerf">SyncDiffusion</span> generates globally coherent panoramas by synchronizing multiple diffusions.
-    </h2>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Perceptual similarity loss. -->
+    <img src="./static/images/framework.png" alt="Framework" style="max-width:80%;">
+      <h2 class="subtitle">
+        LPIPS scores computed across the noisy images at the intermediate step (t = 45 out of 50) of the reverse process (left), 
+        the <i>predicted denoised images</i> at the same timestep t (middle), and the final generated images at timestep t = 0 (right). 
+        The indistinguishable noisy images yield similar LPIPS scores among them, whereas the predicted denoised images, which
+        closely resemble the final outputs even at the beginning of the denoising process, exhibit LPIPS
+        scores that align with those of the final generated images. This indicates that the predicted denoised
+        images can provide meaningful guidance for producing coherent panoramas in the diffusion process.
+      </h2>
+    <!--/ Perceptual similarity loss. -->
   </div>
 </section>
 
 
-
 <section class="hero teaser">
-  <h2 class="title is-3">Generated Panoramas</h2>
-  <div class="container">
-    <img src="./static/images/newyork_ours_01.png" alt="New York (Ours)" style="max-width:100%;">
-    <h2 class="subtitle has-text-centered">
-      "Skyline of New York City"
-    </h2>
-    <img src="./static/images/concert_ours_01.png" alt="Concert (Ours)" style="max-width:100%;">
-    <h2 class="subtitle has-text-centered">
-      "A photo of a rock concert"
-    </h2>
-    <img src="./static/images/anime_ours_01.png" alt="Anime (Ours)" style="max-width:100%;">
-    <h2 class="subtitle has-text-centered">
-      "Natural landscape in anime style illustration"
-    </h2>
-    <h2 class="subtitle has-text-centered">
+  <div class="columns is-centered has-text-centered"></div>
+    <h2 class="title is-3">Generated Panoramas</h2>
+    <p>
       <span class="dnerf">SyncDiffusion</span> generates globally coherent panoramas by synchronizing multiple diffusions.
-    </h2>
+    </p>
+    <div class="container">
+      <img src="./static/images/newyork_ours_01.png" alt="New York (Ours)" style="max-width:100%;">
+      <h2 class="subtitle has-text-centered">
+        "Skyline of New York City"
+      </h2>
+      <img src="./static/images/concert_ours_01.png" alt="Concert (Ours)" style="max-width:100%;">
+      <h2 class="subtitle has-text-centered">
+        "A photo of a rock concert"
+      </h2>
+      <img src="./static/images/anime_ours_01.png" alt="Anime (Ours)" style="max-width:100%;">
+      <h2 class="subtitle has-text-centered">
+        "Natural landscape in anime style illustration"
+      </h2>
+      <img src="./static/images/grass_ours_01.png" alt="Grass (Ours)" style="max-width:100%;">
+      <h2 class="subtitle has-text-centered">
+        "A photo of a grassland with animals"
+      </h2>
+      <img src="./static/images/wallpaper_ours_01.png" alt="Lalaland (Ours)" style="max-width:100%;">
+      <h2 class="subtitle has-text-centered">
+        "Silhouette wallpaper of a dreamy scene with shooting stars"
+      </h2>
+      <img src="./static/images/lake_ours_01.png" alt="Lake (Ours)" style="max-width:100%;">
+      <h2 class="subtitle has-text-centered">
+        "A photo of a lake under the northern lights"
+      </h2>
+      <img src="./static/images/mountain_ours_01.png" alt="Lake (Ours)" style="max-width:100%;">
+      <h2 class="subtitle has-text-centered">
+        "A photo of a mountain range at twilight"
+      </h2>
+      <img src="./static/images/castle_ours_01.png" alt="Lake (Ours)" style="max-width:100%;">
+      <h2 class="subtitle has-text-centered">
+        "A cinematic view of a castle in the sunset"
+      </h2>
+      <!-- <h2 class="subtitle has-text-centered">
+        <span class="dnerf">SyncDiffusion</span> generates globally coherent panoramas by synchronizing multiple diffusions.
+      </h2> -->
+    </div>
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">

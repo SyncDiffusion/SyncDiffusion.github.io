@@ -1,1 +1,1 @@
-# syncdiff_temp.github.io
+# SyncDiffusion.github.io
