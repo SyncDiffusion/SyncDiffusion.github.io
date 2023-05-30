@@ -139,17 +139,22 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Perceptual similarity loss. -->
-    <img src="./static/images/framework.png" alt="Framework" style="max-width:80%;">
-      <h2 class="subtitle">
-        LPIPS scores computed across the noisy images at the intermediate step (t = 45 out of 50) of the reverse process (left), 
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Main Idea</h2>
+        <img src="./static/images/framework.png" alt="Framework" style="max-width:100%;">
+        <div class="content has-text-justified">
+          <p>
+            LPIPS scores computed across the noisy images at the intermediate step (t = 45 out of 50) of the reverse process (left), 
         the <i>predicted denoised images</i> at the same timestep t (middle), and the final generated images at timestep t = 0 (right). 
         The indistinguishable noisy images yield similar LPIPS scores among them, whereas the predicted denoised images, which
         closely resemble the final outputs even at the beginning of the denoising process, exhibit LPIPS
         scores that align with those of the final generated images. This indicates that the predicted denoised
         images can provide meaningful guidance for producing coherent panoramas in the diffusion process.
-      </h2>
-    <!--/ Perceptual similarity loss. -->
+          </p>
+        </div>
+    </div>
+    <!--/ Abstract. -->
   </div>
 </section>
 
