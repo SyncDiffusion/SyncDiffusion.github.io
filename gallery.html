@@ -39,55 +39,43 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
-
-  <style>
-    .image-container {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-    }
-
-    .image-container img {
-        position: absolute;
-        transition: 0.5s;
-        width: 200px;
-        height: 200px;
-        cursor: pointer;
-    }
-    </style>
-    <script>
-        window.onload = function() {
-            var img = document.querySelector('.image-container img');
-            var dragging = false;
-            var startingX = 0;
-
-            img.addEventListener('mousedown', function(e) {
-                dragging = true;
-                startingX = e.pageX;
-            });
-
-            img.addEventListener('mousemove', function(e) {
-                if (dragging) {
-                    var diffX = e.pageX - startingX;
-                    if (diffX > 0) {
-                        img.style.transform = 'translateX(' + diffX + 'px)';
-                    }
-                }
-            });
-
-            img.addEventListener('mouseup', function(e) {
-                dragging = false;
-                img.style.transform = '';
-            });
-        };
-    </script>
 </head>
 
 <body>
-    <div class="image-container">
-        <img src="static/images/anime_md_01.png" alt="Image 1">
-        <img src="static/images/anime_ours_01.png" alt="Image 2">
+    <div class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Qualitative Comparisons</h2>
+            <div class="columns is-centered">
+                <!--visual effects-->
+                <div class="column">
+                    <div class="content">
+                        <div class="columns is-centered">
+                            <div class="column is-full-width">
+                                <div id="example1" class="bal-container-small">
+                                    <div class="bal-after">
+                                        <img src="./static/images/anime_ours_01.png">
+                                        <div class="bal-afterPosition afterLabel" style="z-index:1;">Ours</div>
+                                    </div>
+                                    <div class="bal-before">
+                                        <div class="bal-before-inset" style="width: 1536px;">
+                                            <img src="./static/images/anime_md_01.png">
+                                            <div class="bal-beforePosition beforeLabel" style="z-index:1;">MultiDiffusion [Bar-Tal 2023]</div>
+                                        </div>
+                                    </div>
+                                    <div class="bal-handle">
+                                        ::before
+                                        <span class="handle-left-arrow"></span>
+                                        <span class="handle-right-arrow"></span>
+                                        ::after
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
