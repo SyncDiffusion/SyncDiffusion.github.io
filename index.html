@@ -112,6 +112,28 @@
   </div>
 </section>
 
+
+<div class="container">
+  <div class="content has-text-centered">
+    <video id="vid_newyork" controls autoplay muted loop style="max-width: 100%; border: 3px solid #000000;">
+      <source src="static/images/video_newyork_ours.mp4">
+    </video>
+    <p>
+      <span class="dnerf">SyncDiffusion</span> generates globally coherent panoramas by synchronizing multiple diffusions.
+    </p>
+  </div>
+</div>
+
+<script>
+   document.getElementById('vid_newyork').play();
+</script>
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <video src="static/images/video_newyork_ours.mp4" controls autoplay></video>
+  </div>
+</section> -->
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -161,13 +183,10 @@
   <!--/ Abstract. -->
 </section>
 
-
 <section class="hero teaser">
   <div class="columns is-centered has-text-centered is-flex-direction-column">
+    <br>
     <h2 class="title is-3">Generated Panoramas</h2>
-    <p>
-      <span class="dnerf">SyncDiffusion</span> generates globally coherent panoramas by synchronizing multiple diffusions.
-    </p>
     <div class="container">
       <img src="./static/images/newyork_ours_01.png" alt="New York (Ours)" style="max-width:100%;">
       <h2 class="subtitle has-text-centered">
