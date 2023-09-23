@@ -1,6 +1,14 @@
 body {
     font-family: 'Noto Sans', sans-serif;
   }
+
+  hr {
+    height:2px;
+    width:30%;
+    margin:auto;
+    border-width:0;
+    background-color:darkgrey;
+  }
   
   
   .footer .icon-link {
@@ -166,10 +174,14 @@ body {
 
   .bal-container-new {
     position: relative;
-    width: 100%;
-    height: 150px;
+    /* width: 100%; */
+    /* width: 900px; */
+    /* max-width: 100%; */
+    width: 1536px;
+    height: 256px;
     cursor: grab;
     overflow: visible;
+    margin: auto;
   }
   
   .bal-container-big {

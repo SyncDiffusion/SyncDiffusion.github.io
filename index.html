@@ -6,6 +6,7 @@
         content="SyncDiffusion synchronizes multiple diffusions to create coherent image montages.">
   <meta name="keywords" content="SyncDiffusion, Diffusion models, Joint Diffusion">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <title>SyncDiffusion: Coherent Montage via Synchronized Joint Diffusions</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,6 +49,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">SyncDiffusion: Coherent Montage via Synchronized Joint Diffusions</h1>
+          <div style="font-size:x-large;">NeurIPS 2023</div><br>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://phillipinseoul.github.io/">Yuseung Lee</a>,</span>
@@ -94,6 +96,26 @@
                   <span>Code</span>
                   </a>
               </span>
+              <!-- Demo Link.-->
+              <span class="link-block">
+                <a href="#huggingface_demo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-chevron-circle-down"></i>
+                  </span>
+                  <span>Demo</span>
+                  </a>
+              </span>
+              <!-- Hugging Face Link.-->
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/KAIST-Geometric-AI-Lab/syncdiffusion-demo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-magic"></i>
+                  </span>
+                  <span>HuggingFace</span>
+                  </a>
+              </span>
             </div>
           </div>
         </div>
@@ -127,8 +149,9 @@
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+    <!-- <div class="columns is-centered has-text-centered"> -->
+    <div class="columns is-centered has-text-centered is-flex-direction-column">
+      <!-- <div class="column is-four-fifths"> -->
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
@@ -147,7 +170,7 @@
     </div>
     <!--/ Abstract. -->
   </div>
-</section>
+</section><hr>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -171,7 +194,29 @@
     </div>
   </div>
   <!--/ Abstract. -->
-</section>
+</section><hr>
+
+<!-- Hugging Face Demo. -->
+<section class="section" id="huggingface_demo">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered is-flex-direction-column">
+      <h2 class="title is-3">HuggingFace Demo</h2>
+    <div class="demoCon" style="width:100%; height:fit-content;">
+      <script
+        type="module"
+        src="https://gradio.s3-us-west-2.amazonaws.com/3.44.3/gradio.js"
+      ></script>
+
+      <gradio-app 
+        src="https://kaist-geometric-ai-lab-syncdiffusion-demo.hf.space"
+        eager="true"
+        theme_mode="light"
+      ></gradio-app>
+    </div>
+  </div>
+</section><hr><br>
+<!-- Hugging Face Demo. -->
+
 
 <section class="hero teaser">
   <div class="columns is-centered has-text-centered is-flex-direction-column">
@@ -215,21 +260,23 @@
       </h2> -->
     </div>
   </div>
-</section>
+</section><br><br><hr>
 
 
 <section class="section">
-  <div class="container is-max-desktop">
+  <!-- <div class="container is-max-desktop"> -->
+  <div class="hero teaser">
     <div class="columns is-centered has-text-centered is-flex-direction-column">
     <br>
     <h2 class="title is-3">Qualitative Comparisons</h2>
-    <p><span class="dnerf">SyncDiffusion</span> generates globally coherent panorama images compared to the state-of-the-art MultiDiffusion [Bar-Tal 2023]. 
+    <p><span class="dnerf">SyncDiffusion</span> generates globally coherent panorama images compared to the state-of-the-art MultiDiffusion [Bar-Tal et al. 2023]. 
       If you are on a mobile device, please rotate your device to a horizontal or landscape orientation for optimal viewing of the images. <br></br></p>
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <div class="columns is-centered">
-            <div class="column is-full-width">
+          <div class="column is-full-width">
+          <!-- <div class="column"> -->
+            <div class="column">
               <!--example 9-->
               <div id="example9" class="bal-container-new">
                 <div class="bal-after">
@@ -239,7 +286,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/concert_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -258,7 +305,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/newyork_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -277,7 +324,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/anime_md_01.png">
-                    <div class="bal-beforePosition beforeLabel">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -296,7 +343,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/beach_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -315,7 +362,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/wallpaper_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -334,7 +381,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/beachside_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -353,7 +400,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/castle_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -372,7 +419,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/cartoon_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -391,7 +438,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/city_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -410,7 +457,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/coral_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -429,7 +476,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/grass_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -448,7 +495,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/lake_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -467,7 +514,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/lalaland_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -486,7 +533,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/mountain_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -505,7 +552,7 @@
                 <div class="bal-before">
                   <div class="bal-before-inset">
                     <img src="./static/images/snowy_md_01.png">
-                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal 2023]</div>
+                    <div class="bal-beforePosition beforeLabel ">MultiDiffusion [Bar-Tal et al. 2023]</div>
                   </div>
                 </div>
                 <div class="bal-handle">
@@ -521,7 +568,7 @@
       </div>
     </div>
   </div>
-</section>
+</section><hr>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -533,7 +580,7 @@
         year={2023}
     }</code></pre>
   </div>
-</section>
+</section><hr>
 
 <section class="section">
   <div class="container is-max-desktop content">
