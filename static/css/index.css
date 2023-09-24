@@ -2,6 +2,10 @@ body {
     font-family: 'Noto Sans', sans-serif;
   }
 
+  .row{
+    height: 800px;
+  }
+
   hr {
     height:2px;
     width:30%;
