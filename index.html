@@ -167,10 +167,17 @@
           </p>
         </div>
       </div>
+
+      <!-- ========== Video ========== -->
+      <video id="“axe”" controls="" autoplay="" muted="" loop="" style="max-width:100%;">
+        <source src="./static/syncdiffusion_video_resized.mp4">
+      </video>
     </div>
     <!--/ Abstract. -->
   </div>
-</section><hr>
+</section>
+
+<hr>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -382,7 +389,7 @@
               <p>“Natural landscape in anime style illustration”</p>
               <p></p>
               <!--example 2-->
-              <div id="example2" class="bal-container-new">
+              <!-- <div id="example2" class="bal-container-new">
                 <div class="bal-after">
                   <img src="./static/images/beach_ours_01.png">
                   <div class="bal-afterPosition afterLabel">Ours</div>
@@ -399,7 +406,7 @@
                 </div>
               </div>
               <p>“A beach with palm trees”</p>
-              <p></p>
+              <p></p> -->
               <!--example 3-->
               <div id="example3" class="bal-container-new">
                 <div class="bal-after">
@@ -420,7 +427,7 @@
               <p>“Silhouette wallpaper of a dreamy scene with shooting stars”</p>
               <p></p>
               <!--example 5-->
-              <div id="example5" class="bal-container-new">
+              <!-- <div id="example5" class="bal-container-new">
                 <div class="bal-after">
                   <img src="./static/images/beachside_ours_01.png">
                   <div class="bal-afterPosition afterLabel">Ours</div>
@@ -437,7 +444,7 @@
                 </div>
               </div>
               <p>“A film photo of a beachside street under the sunset”</p>
-              <p></p>
+              <p></p> -->
               <!--example 6-->
               <div id="example6" class="bal-container-new">
                 <div class="bal-after">
@@ -591,7 +598,7 @@
               <p>“A photo of a mountain range at twilight”</p>
               <p></p>
               <!--example 16-->
-              <div id="example16" class="bal-container-new">
+              <!-- <div id="example16" class="bal-container-new">
                 <div class="bal-after">
                   <img src="./static/images/snowy_ours_01.png">
                   <div class="bal-afterPosition afterLabel">Ours</div>
@@ -608,11 +615,23 @@
                 </div>
               </div>
               <p>“A photo of a snowy mountain peak with skiers”</p>
-              <p></p>
+              <p></p> -->
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section><hr>
+
+<section class="hero teaser">
+  <div class="columns is-centered has-text-centered is-flex-direction-column"><br>
+    <h2 class="title is-3">Plug-and-Play Applications</h2>
+  </div>
+  <p></p>
+  <div class="columns is-centered has-text-centered is-flex-direction-column">
+    <div class="container" style="width:70%;">
+      <img src="./static/images/figure-applications.png" alt="applications" style="max-width:100%;">
     </div>
   </div>
 </section><hr>
@@ -632,8 +651,9 @@
 <section class="section">
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
-    We thank the authors of <a href="https://multidiffusion.github.io/">MultiDiffusion</a> and <a href="https://omriavrahami.com/blended-latent-diffusion-page/">Blended Latent Diffusion</a> for 
-    providing their code and models.
+    We thank Juil Koo for valuable discussions on diffusion models and Eunji Hong for help in conducting user studies. This work was partially supported by the NRF grant (RS2023-00209723) and IITP grants (2019-0-00075, 2022-0-00594, RS-2023-00227592) funded by the Korean government (MSIT), the Technology Innovation Program (20016615) funded by the Korean government (MOTIE), grants from ETRI, KT, NCSOFT, and Samsung Electronics, and computing resource support from KISTI.
+    <!-- We thank the authors of <a href="https://multidiffusion.github.io/">MultiDiffusion</a> and <a href="https://omriavrahami.com/blended-latent-diffusion-page/">Blended Latent Diffusion</a> for 
+    providing their code and models. -->
   </div>
 </section>
 
@@ -642,15 +662,15 @@
   new BeforeAfter({
     id: "#example1"
   });
-  new BeforeAfter({
-    id: "#example2"
-  });
+  // new BeforeAfter({
+  //   id: "#example2"
+  // });
   new BeforeAfter({
     id: "#example3"
   });
-  new BeforeAfter({
-    id: "#example5"
-  });
+  // new BeforeAfter({
+  //   id: "#example5"
+  // });
   new BeforeAfter({
     id: "#example6"
   });
@@ -681,10 +701,23 @@
   new BeforeAfter({
     id: "#example15"
   });
-  new BeforeAfter({
-    id: "#example16"
-  });
+  // new BeforeAfter({
+  //   id: "#example16"
+  // });
 </script>
+
+
+<!-- <section class="hero teaser">
+  <div class="columns is-centered has-text-centered is-flex-direction-column"><br>
+    <h2 class="title is-3">Plug-and-Play Applications</h2>
+  </div>
+  <p></p>
+  <div class="columns is-centered has-text-centered is-flex-direction-column">
+    <div class="container" style="width:70%;">
+      <img src="./static/images/figure-applications.png" alt="applications" style="max-width:100%;">
+    </div>
+  </div>
+</section><hr> -->
 
 <footer class="footer">
   <div class="container">
